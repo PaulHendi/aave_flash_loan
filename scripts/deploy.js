@@ -6,7 +6,9 @@ async function main() {
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
     const FlashLoan = await ethers.getContractFactory("FlashLoan");
-    const FlashLoanDeployed = await FlashLoan.deploy('0xC911B590248d127aD18546B186cC6B324e99F02c');
+    // GOERLI : 0xC911B590248d127aD18546B186cC6B324e99F02c 
+    // FANTOM testnet : 0xC809bea009Ca8DAA680f6A1c4Ca020D550210736
+    const FlashLoanDeployed = await FlashLoan.deploy('0xC809bea009Ca8DAA680f6A1c4Ca020D550210736');
   
     console.log("SC address:", FlashLoanDeployed.address);   
 }

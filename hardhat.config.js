@@ -8,6 +8,10 @@ module.exports = {
     goerli: {
       url: "https://goerli.infura.io/v3/" + process.env.API_INFURA,
       accounts: [process.env.PRIVATE_KEY]
+    },
+    fantom_testnet: {
+      url: "https://rpc.ankr.com/fantom_testnet",
+      accounts: [process.env.PRIVATE_KEY]
     }
   }
 };
